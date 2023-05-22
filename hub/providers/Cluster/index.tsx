@@ -3,7 +3,7 @@ import { clusterApiUrl, Connection } from '@solana/web3.js';
 import { createContext, useState } from 'react';
 
 const DEVNET_RPC_ENDPOINT =
-  process.env.DEVNET_RPC || 'https://liquid.devnet.rpcpool.com/';
+  process.env.DEVNET_RPC || 'https://metaplex.devnet.rpcpool.com';
 const MAINNET_RPC_ENDPOINT =
   process.env.MAINNET_RPC ||
   'https://api.metaplex.solana.com';
