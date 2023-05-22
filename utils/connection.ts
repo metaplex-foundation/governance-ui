@@ -7,11 +7,11 @@ const ENDPOINTS: EndpointInfo[] = [
     name: 'mainnet',
     url:
       process.env.MAINNET_RPC ||
-      'http://realms-realms-c335.mainnet.rpcpool.com/258d3727-bb96-409d-abea-0b1b4c48af29/',
+      'https://api.metaplex.solana.com',
   },
   {
     name: 'devnet',
-    url: process.env.DEVNET_RPC || 'https://api.dao.devnet.solana.com/',
+    url: process.env.DEVNET_RPC || 'https://liquid.devnet.rpcpool.com/',
   },
   {
     name: 'localnet',

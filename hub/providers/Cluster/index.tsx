@@ -3,10 +3,10 @@ import { clusterApiUrl, Connection } from '@solana/web3.js';
 import { createContext, useState } from 'react';
 
 const DEVNET_RPC_ENDPOINT =
-  process.env.DEVNET_RPC || 'https://api.dao.devnet.solana.com/';
+  process.env.DEVNET_RPC || 'https://liquid.devnet.rpcpool.com/';
 const MAINNET_RPC_ENDPOINT =
   process.env.MAINNET_RPC ||
-  'http://realms-realms-c335.mainnet.rpcpool.com/258d3727-bb96-409d-abea-0b1b4c48af29/';
+  'https://api.metaplex.solana.com';
 const TESTNET_RPC_ENDPOINT = 'http://127.0.0.1:8899';
 
 export enum ClusterType {
@@ -74,8 +74,8 @@ export function ClusterProvider(props: Props) {
     type === ClusterType.Devnet
       ? DevnetCluster
       : type === ClusterType.Testnet
-      ? TestnetCluster
-      : MainnetCluster;
+        ? TestnetCluster
+        : MainnetCluster;
 
   return (
     <context.Provider value={{ cluster, type, setType }}>
