@@ -129,7 +129,7 @@
     "dayjs": "1.11.1",
     "did-jwt": "6.11.0",
     "draft-js": "0.11.7",
-    "figlet": "1.5.2",
+    "figlet": "1.11.3",
     "fp-ts": "2.12.2",
     "goblingold-sdk": "1.2.35",
     "graphql": "16.5.0",
